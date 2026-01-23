@@ -1,3 +1,4 @@
+require("dotenv").config();
 const createError = require("http-errors");
 const express = require("express");
 const path = require("path");
@@ -28,12 +29,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, "public"))); //static path
-app.use(
-  "/tinymce",
-  express.static(path.join(__dirname, "node_modules", "tinymce"))
-); //static path for tinymce configuration 
+app.use("/tinymce", express.static(path.join(__dirname, "node_modules", "tinymce"))); //static path for tinymce configuration
 
-app.use("/", indexRouter); //index routes 
+app.use("/", indexRouter); //index routes
 app.use("/admin", adminRouter); //admin routes
 
 // catch 404 and forward to error handler

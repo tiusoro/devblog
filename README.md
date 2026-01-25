@@ -16,7 +16,8 @@ Follow the steps below to set up and run the DevBlog project on your local machi
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Armanidrisi/devblog.git
+   git clone https://github.com/tiusoro/devblog.git
+   
    ```
 
 2. Navigate to the project directory:
@@ -60,6 +61,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## :envelope: Contact
 
-If you have any questions, suggestions, or feedback, feel free to reach out to us at idrisiarman19@gmail.com.
+If you have any questions, suggestions, or feedback, feel free to reach out to us at tiusoro@gmail.com.
 
 Happy coding! :rocket:
